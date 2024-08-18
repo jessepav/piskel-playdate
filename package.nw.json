@@ -1,0 +1,13 @@
+{
+    "name": "Piskel",
+    "main": "dest/prod/index.html",
+    "window": {
+    "title": "Piskel",
+    "icon": "dest/prod/logo.png",
+    "toolbar": false,
+    "width": 1200,
+    "height": 960,
+    "top": 0,
+    "left": 0
+    }
+}

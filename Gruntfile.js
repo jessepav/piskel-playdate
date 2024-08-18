@@ -279,18 +279,21 @@ module.exports = function(grunt) {
           flavor: "normal",
           platform: "win",
           arch: "x64",
+          cacheDir: './node_modules/nw',
           outDir: './dest/desktop/',
+          managedManifest: './package.nw.json',
         },
         src: ['./dest/prod/**/*', "./package.json", "!./dest/desktop/"]
       },
       linux_x64 : {
         options: {
           mode: "build",
-          version : "0.85.0",
-          flavor: "normal",
+          flavor: "sdk",
           platform: "linux",
           arch: "x64",
+          cacheDir: './node_modules/nw',
           outDir: './dest/desktop/',
+          managedManifest: './package.nw.json',
         },
         src: ['./dest/prod/**/*', "./package.json", "!./dest/desktop/"]
       },
@@ -300,7 +303,9 @@ module.exports = function(grunt) {
           flavor: "normal",
           platform: "osx",
           arch: "x64",
+          cacheDir: './node_modules/nw',
           outDir: './dest/desktop/',
+          managedManifest: './package.nw.json',
           app: {
             icon: './piskel.icns'
           }
@@ -313,7 +318,9 @@ module.exports = function(grunt) {
           flavor: "normal",
           platform: "osx",
           arch: "arm64",
+          cacheDir: './node_modules/nw',
           outDir: './dest/desktop/',
+          managedManifest: './package.nw.json',
           app: {
             icon: './piskel.icns'
           }
