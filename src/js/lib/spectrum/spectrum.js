@@ -1033,14 +1033,9 @@
     $.spectrum.palettes = { };
 
     $.fn.spectrum.processNativeColorInputs = function () {
-        var colorInput = $("<input type='color' value='!' />")[0];
-        var supportsColor = colorInput.type === "color" && colorInput.value != "!";
-
-        if (!supportsColor) {
-            $("input[type=color]").spectrum({
-                preferredFormat: "hex6"
-            });
-        }
+        $("input[type=color]").spectrum({
+            preferredFormat: "hex6"
+        });
     };
 
     // TinyColor v0.9.16
